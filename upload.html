@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="styles/upload.css">
+</head>
+<body>
+
+    <div class="hero">
+
+        <div class="card">
+            <h1>R Snake</h1>
+            <p>@rsnake</p>
+            <img id="profilePic" src="./images/user/plasma-widgets-addons_preferences-desktop-user copy.png" alt="user image">
+
+            <label for="input-file">Update image</label>
+            <input id="input-file" type="file" accept="image/jpeg, image/png, image/jpg">
+        </div>
+
+    </div>
+
+
+    <script>
+        let profilePic = document.getElementById('profilePic');
+        let inputFile = document.getElementById('input-file');
+
+        inputFile.onchange = ()=> {
+            profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        }
+    </script>
+    
+</body>
+</html>

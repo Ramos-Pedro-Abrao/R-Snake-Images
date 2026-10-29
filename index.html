@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Snake Images</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">R Snake Images</div>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#upload-dialog" id="open-upload">Upload</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Todas imagens que você precisa</h1>
+    </section>
+
+    <main>
+        <section id="container" class="container">
+            <div class="element">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/2.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/3.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/4.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/5.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/6.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/7.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/8.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/9.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/10.png" alt="">
+            </div>
+            <div class="element">
+                <img src="./images/11.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <dialog id="upload-dialog" class="upload_form" aria-labelledby="upload-title">
+        <div class="card">
+            <p>Carregar imagens</p>
+            <h2 id="upload-title">Escolha uma imagem para fazer upload</h2>
+            <button class="close-dialog" type="button" aria-label="Fechar janela">Fechar</button>
+            <button id="choose-images" type="button">Escolher imagem(ns)</button>
+            <p id="upload-selection" class="upload-selection" role="status" aria-live="polite">Nenhuma imagem selecionada</p>
+            <div class="upload-actions">
+                <button id="cancelar_btn" type="button">Cancelar</button>
+                <button id="carregar" type="button">OK</button>
+            </div>
+            <input id="input-file" type="file" accept="image/png, image/jpeg, image/webp" multiple>
+        </div>
+    </dialog>
+    <footer>
+
+        <p class="copyright"><span>©</span> 2026 R Snake Images</p>
+
+        <nav>
+            <p>Contactos</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">X</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="./javascript/upload.js"></script>
+</body>
+</html>
