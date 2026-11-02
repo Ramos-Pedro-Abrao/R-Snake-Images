@@ -1,19 +1,13 @@
 import "dotenv/config";
 import mysql from "mysql2/promise";
 
-const requiredVariables = ["DB_HOST", "DB_USER", "DB_PASSWORD", "DB_NAME"];
-const missingVariables = requiredVariables.filter((name) => process.env[name] === undefined);
-
-if (missingVariables.length) {
-    throw new Error(`Configure as variáveis do MySQL no .env: ${missingVariables.join(", ")}`);
-}
 
 const pool = mysql.createPool({
-    host: process.env.DB_HOST,
-    port: Number(process.env.DB_PORT || 3306),
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: '',
+    database: 'rsnakeimagesdb',
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
